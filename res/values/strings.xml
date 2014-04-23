@@ -6,5 +6,6 @@
     <string name="login_button_string">Login</string><string name="login_edit_text">username</string>
     
     <string name="password_edit_text">password</string>
+    <string name="invalid_login_input">username and password can\'t be blank</string>
 
 </resources>
