@@ -1,20 +1,16 @@
 package com.example.todoapp;
 
-import org.w3c.dom.Text;
-
-import com.example.todoapp.model.DatabaseHandler;
-
 import android.app.Activity;
-import android.content.Context;
-import android.database.sqlite.SQLiteDatabase;
+import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.todoapp.model.DatabaseHandler;
 
 public class LoginActivity extends Activity implements OnClickListener {
 	public static final String DEBUG_TEXT = "LoginActivity";
@@ -51,7 +47,8 @@ public class LoginActivity extends Activity implements OnClickListener {
 			
 			// Success
 			if(db.getUser(loginEditText.getText().toString(), passwordLoginText.getText().toString())) {
-				
+				SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("user_data", 0); // 0 for private mode
+				sharedPreferences.edit().putString("username", loginEditText.getText().toString()).commit();
 			} else {
 				authenticationFailedTextView.setVisibility(TextView.VISIBLE);
 			}
