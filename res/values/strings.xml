@@ -3,10 +3,12 @@
 
     <string name="app_name">TODOApp</string>
     <string name="action_settings">Settings</string>
-    <string name="login_button_string">Login</string><string name="login_edit_text">username</string>
-    
+    <string name="login_button_string">Login</string>
+    <string name="login_edit_text">username</string>
     <string name="password_edit_text">password</string>
     <string name="invalid_login_input">username and password can\'t be blank</string>
     <string name="user_authentication_failed">Wrong username or password!</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>
