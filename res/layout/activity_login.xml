@@ -33,6 +33,15 @@
         android:textColor="#FF0000"
         android:visibility="gone" />
 
+    <TextView
+        android:id="@+id/authenticationFailedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_authentication_failed"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FF0000"
+        android:visibility="gone" />
+
     <Button
         android:id="@+id/loginButton"
         android:layout_width="wrap_content"

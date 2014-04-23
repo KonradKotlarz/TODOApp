@@ -7,5 +7,6 @@
     
     <string name="password_edit_text">password</string>
     <string name="invalid_login_input">username and password can\'t be blank</string>
+    <string name="user_authentication_failed">Wrong username or password!</string>
 
 </resources>
